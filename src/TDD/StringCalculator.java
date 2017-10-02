@@ -15,7 +15,7 @@ public class StringCalculator {
         else if(numbersArray.length == 1){
             return Integer.parseInt(numbers);
         }
-        else if(numbersArray.length == 2){
+        else {
             for(int i = 0; i < numbersArray.length; i++){
                 result = result+Integer.parseInt(numbersArray[i]);
             }
