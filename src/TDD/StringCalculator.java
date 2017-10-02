@@ -16,12 +16,11 @@ public class StringCalculator {
         if(numbers.length() == 0){
             return 0;
         }
-        else if(numbersArray.length == 1){
-            return Integer.parseInt(numbers);
-        }
         else {
             for(int i = 0; i < numbersArray.length; i++){
-                result = result+Integer.parseInt(numbersArray[i]);
+                if(!(Integer.parseInt(numbersArray[i]) > 1000)){
+                    result = result+Integer.parseInt(numbersArray[i]);
+                }
             }
         }
         for(int i = 0; i < numbersArray.length; i++){
