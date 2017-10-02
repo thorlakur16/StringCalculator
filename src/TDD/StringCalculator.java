@@ -25,6 +25,7 @@ public class StringCalculator {
 
     public static void main(String[] args) {
         String s = StdIn.readLine().toString();
+        s = s.replace("\\n","," );
         int total = Add(s);
         StdOut.print(total);
     }
